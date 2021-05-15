@@ -29,6 +29,8 @@ document.querySelector(".tombol").addEventListener("click", function () {
           inputValidator: (value) => {
             if (!value) {
               return "Isi dulu dong beb";
+            } else if (value.toLowerCase() !== 'herawati') {
+              Swal.fire("Kamu siapa anjir", "error")
             } else {
               nama = value;
             }
